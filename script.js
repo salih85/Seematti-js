@@ -64,7 +64,7 @@ var navtext2 = document.createElement('div');
 
 var navbarright = document.createElement('div');
              navbarright.style.display = "flex";
-             navbarright.style.paddingRight="80px";
+             navbarright.style.paddingRight="50px";
              navbarright.style.paddingTop="30px";
              navbarright.style.alignItems = "center";
              navbarright.style.gap = "20px";
@@ -134,565 +134,1267 @@ var section = document.createElement('img');
      document.body.append(wrapper);
 
 
-var Container = document.createElement('div');
-              Container.classList.add('row');
-              Container.style.display = "flex";
-              Container.style.flexWrap = "wrap";
-              Container.style.justifyContent = "center";
-              Container.style.gap = "5px";
 
-var imageData = [
-             { src: './image/Web-banner_642-X-856_3.webp', title: 'Banarasi' },
-             { src: './image/Web-banner_642-X-856_5.webp', title: 'Kancheepuram' },
-             { src: './image/Web-banner_642-X-856_4.webp', title: 'All sarees' },
-             { src: './image/Web-banner_642-X-856_6.webp', title: 'Tussar Sarees' },
-             { src: './image/Web-banner_642-X-856_2.webp', title: 'Designer' },
-             { src: './image/Web-banner_642-X-856_1.webp', title: 'Kerala Sarees' }
-];
+var Container1 = document.createElement('div');
+           Container1.classList.add = ('row');
+           Container1.style.display = "flex";
+           Container1.style.flexWrap = "wrap";
+           Container1.style.justifyContent = "center";
+           Container1.style.gap = "15px";
+           Container1.style.padding = "10px";
 
-imageData.forEach(data => {
-            var imgWrapper = document.createElement('div');
-            imgWrapper.classList.add('col-4', 'col-md-2', 'col-lg-2');
-            imgWrapper.style.maxWidth = "180px";
-            imgWrapper.style.width = "100%";
-            imgWrapper.style.textAlign = "center";
+var box1 = document.createElement('div');
+            box1.style.textAlign = "center";
+            box1.style.width = "160px";
 
-var img = document.createElement('img');
-            img.src = data.src;
-            img.alt = data.title;
-            img.style.width = "100%";
-            img.style.borderRadius = "8px";
-            img.style.height = "auto";
-             img.classList.add('img-hover');
+var img1 = document.createElement('img');
+           img1.src = "./image/Web-banner_642-X-856_1.webp";
+           img1.style.width = "100%";
+           img1.style.borderRadius = "8px";
+           img1.style.height = "auto";
+           img1.classList.add('img-hover');
 
- var title = document.createElement('p');
-             title.innerText = data.title;
-             title.style.fontSize = "14px";
-             title.style.fontWeight = "600";
-             title.style.marginTop = "8px";
-             title.style.color = "#333";
+var title1 = document.createElement('p');
+           title1.innerText = "Kerala Sarees";
+           title1.style.fontSize = "14px";
+           title1.style.fontWeight = "600";
+           title1.style.marginTop = "6px";
+           title1.style.color = "black";
 
-      imgWrapper.append(img);
-      imgWrapper.append(title);
-      Container.append(imgWrapper);
-});
-     document.body.append(Container);
+  box1.append(img1);
+  box1.append(title1);
+  Container1.append(box1);
 
+var box2 = document.createElement('div');
+          box2.style.textAlign = "center";
+          box2.style.width = "160px";
 
+var img2 = document.createElement('img');
+          img2.src = "./image/Web-banner_642-X-856_2.webp";
+          img2.style.width = "100%";
+          img2.style.borderRadius = "8px";
+          img2.style.height = "auto";
+          img2.classList.add('img-hover');
 
-var container1 = document.createElement('div');
-            container1.classList.add('container', 'pt-5');
+var title2 = document.createElement('p');
+          title2.innerText = "Designer";
+          title2.style.fontSize = "14px";
+          title2.style.fontWeight = "600";
+          title2.style.marginTop = "6px";
+          title2.style.color = "black";
+box2.append(img2);
+box2.append(title2);
+Container1.append(box2);
 
-var row = document.createElement('div');
-            row.classList.add('row', 'text-center');
+var box3 = document.createElement('div');
+         box3.style.textAlign = "center";
+         box3.style.width = "160px";
 
-var subtitle = document.createElement('div');
-            subtitle.classList.add('col-12');
-            subtitle.innerText = "SUITABLE FOR EVERY OCCASION";
-            subtitle.style.color = "red";
-            subtitle.style.fontSize = "16px";
-            subtitle.style.fontWeight = "700";
+var img3 = document.createElement('img');
+         img3.src = "./image/Web-banner_642-X-856_3.webp";
+         img3.style.width = "100%";
+         img3.style.borderRadius = "8px";
+         img3.style.height = "auto";
+         img3.classList.add('img-hover');
+ 
+var title3 = document.createElement('p');
+         title3.innerText = "Banarasi";
+         title3.style.fontSize = "14px";
+         title3.style.fontWeight = "600";
+         title3.style.marginTop = "6px";
+         title3.style.color = "black";
 
-var mainTitle = document.createElement('div');
-             mainTitle.classList.add('col-12', 'pt-2');
-             mainTitle.innerText = "CARRY CHARM WHEREVER YOU GO";
-             mainTitle.style.fontSize = "24px";
-             mainTitle.style.fontWeight = "700";
+box3.append(img3);
+box3.append(title3);
+Container1.append(box3);
 
-    row.append(subtitle);
-    row.append(mainTitle);
-    container1.append(row);
+var box4 = document.createElement('div');
+         box4.style.textAlign = "center";
+         box4.style.width = "160px";
 
-var imageRow = document.createElement('div');
-            imageRow.classList.add('row', 'gy-4', 'pt-4');
+var img4 = document.createElement('img');
+         img4.src = "./image/Web-banner_642-X-856_4.webp";
+         img4.style.width = "100%";
+         img4.style.borderRadius = "8px";
+         img4.style.height = "auto";
+         img4.classList.add('img-hover');
 
-var imageData1 = [
-              { src: './image/642x856_2-1.webp' },
-              { src: './image/642x856_3-1.webp' },
-              { src: './image/642x856_4-1.webp' },
-              { src: './image/642x856-1.webp' }
-];
+var title4 = document.createElement('p');
+        title4.innerText = "All Sarees";
+        title4.style.fontSize = "14px";
+        title4.style.fontWeight = "600";
+        title4.style.marginTop = "6px";
+        title4.style.color = "black";
 
-imageData1.forEach(data => {
-var col = document.createElement('div');
-              col.classList.add('col-6', 'col-md-3', 'col-lg-3');
-var img = document.createElement('img');
-              img.src = data.src;
-              img.alt = "Image";
-              img.style.width = "100%";
-              img.style.marginTop = "13px";
-              img.style.borderRadius = "10px";
-               img.classList.add('img-hover');
+box4.append(img4);
+box4.append(title4);
+Container1.append(box4);
 
-     col.append(img);
-     imageRow.append(col);
-});
+var box5 = document.createElement('div');
+         box5.style.textAlign = "center";
+         box5.style.width = "160px";
 
-      container1.append(imageRow);
-      document.body.append(container1);
+var img5 = document.createElement('img');
+        img5.src = "./image/Web-banner_642-X-856_5.webp";
+        img5.style.width = "100%";
+        img5.style.borderRadius = "8px";
+        img5.style.height = "auto";
+        img5.classList.add('img-hover');
+
+var title5 = document.createElement('p');
+        title5.innerText = "Kancheepuram";
+        title5.style.fontSize = "14px";
+        title5.style.fontWeight = "600";
+        title5.style.marginTop = "6px";
+        title5.style.color = "black";
+
+box5.append(img5);
+box5.append(title5);
+Container1.append(box5);
+
+var box6 = document.createElement('div');
+       box6.style.textAlign = "center";
+       box6.style.width = "160px";
+
+var img6 = document.createElement('img');
+       img6.src = "./image/Web-banner_642-X-856_6.webp";
+       img6.style.width = "100%";
+       img6.style.borderRadius = "8px";
+       img6.style.height = "auto";
+       img6.classList.add('img-hover');
+
+var title6 = document.createElement('p');
+     title6.innerText = "Tussar Sarees";
+     title6.style.fontSize = "14px";
+     title6.style.fontWeight = "600";
+     title6.style.marginTop = "6px";
+     title6.style.color = "black";
+
+box6.append(img6);
+box6.append(title6);
+Container1.append(box6);
+document.body.append(Container1);
 
 
 
 
 var container2 = document.createElement('div');
-             container2.classList.add('container', 'pt-5');
+         container2.classList.add('container', 'pt-5');
 
 var row = document.createElement('div');
-             row.classList.add('row', 'text-center');
+          row.classList.add('row', 'text-center');
 
-var subtitle1 = document.createElement('div');
-             subtitle1.classList.add('col-12','pt-5');
-             subtitle1.innerText = "SHOP NOW";
-             subtitle1.style.color = "red";
-             subtitle1.style.fontSize = "16px";
-             subtitle1.style.fontWeight = "700";
+var subtitle = document.createElement('div');
+         subtitle.classList.add('col-12', 'pt-5');
+         subtitle.innerText = "SHOP NOW";
+         subtitle.style.color = "red";
+         subtitle.style.fontSize = "16px";
+         subtitle.style.fontWeight = "700";
 
-var mainTitle1 = document.createElement('div');
-              mainTitle1.classList.add('col-12', 'pt-2');
-              mainTitle1.innerText = "STAY ON BUDGET, SHOP IN STYLE!";
-              mainTitle1.style.fontSize = "24px";
-              mainTitle1.style.fontWeight = "700";
+var maintitle = document.createElement('div');
+        maintitle.classList.add('col-12', 'pt-2');
+        maintitle.innerText = "STAY ON BUDGET, SHOP IN STYLE!";
+        maintitle.style.fontSize = "24px";
+        maintitle.style.fontWeight = "700";
 
-   row.append(subtitle1);
-   row.append(mainTitle1);
-   container2.append(row);
+row.append(subtitle);
+row.append(maintitle);
+container2.append(row);
+
 
 var imageRow = document.createElement('div');
-            imageRow.classList.add('row', 'gy-4', 'pt-5');
+       imageRow.style.display = 'flex';
+       imageRow.style.flexWrap = 'wrap';
+       imageRow.style.justifyContent = 'center';
+       imageRow.style.gap = '15px';
+       imageRow.style.marginTop = '40px';
+       imageRow.style.width = '100%';
 
-var imageData1 = [
-          { src: './image/320x480_1.webp' },
-          { src: './image/320x480_2.webp' },
-          { src: './image/320x480_3.webp' },
-          { src: './image/320x480_4.webp' },
-          { src: './image/320x480_5.webp' },
-          { src: './image/320x480_6.webp' }
-];
+var box1 = document.createElement('div');
+        box1.style.width = '22%';
 
-imageData1.forEach(data => {
-var col = document.createElement('div');
-                col.classList.add('col-6', 'col-md-4', 'col-lg-2'); 
+var img1 = document.createElement('img');
+      img1.src = './image/642x856_2-1.webp';
+      img1.style.width = '100%';
+      img1.style.borderRadius = '10px';
+      img1.classList.add('img-hover');
+box1.append(img1);
+imageRow.append(box1);
 
-  var img = document.createElement('img');
-            img.src = data.src;
-             img.alt = "Image";
-            img.style.width = "100%";
-            img.style.marginTop = "16px";
-            img.style.borderRadius = "10px";
-            img.classList.add('img-hover');
+var box2 = document.createElement('div');
+       box2.style.width = '22%';
 
-    col.append(img);
-    imageRow.append(col);
-});
+var img2 = document.createElement('img');
+       img2.src = './image/642x856_3-1.webp';
+       img2.style.width = '100%';
+       img2.style.borderRadius = '10px';
+       img2.classList.add('img-hover');
+box2.append(img2);
+imageRow.append(box2);
 
-    container2.append(imageRow);
-    document.body.append(container2);
+var box3 = document.createElement('div');
+       box3.style.width = '22%';
+var img3 = document.createElement('img');
+       img3.src = './image/642x856_4-1.webp';
+       img3.style.width = '100%';
+       img3.style.borderRadius = '10px';
+       img3.classList.add('img-hover');
+box3.append(img3);
+imageRow.append(box3);
+
+var box4 = document.createElement('div');
+        box4.style.width = '22%';
+var img4 = document.createElement('img');
+        img4.src = './image/642x856-1.webp';
+        img4.style.width = '100%';
+        img4.style.borderRadius = '10px';
+        img4.classList.add('img-hover');
+box4.append(img4);
+imageRow.append(box4);
+
+container2.append(imageRow);
+document.body.append(container2);
 
 
 
 
 var container3 = document.createElement('div');
-             container3.classList.add('container');
-             container3.style.paddingTop="100px";
+           container3.classList.add('container', 'pt-5');
 
-var headingRow2 = document.createElement('div');
-              headingRow2.classList.add('row', 'text-center');
+var row = document.createElement('div');
+           row.classList.add('row', 'text-center');
 
-var subtitle2 = document.createElement('div');
-             subtitle2.classList.add('col-12');
-             subtitle2.innerText = "FEATURED CATEGORIES";
-             subtitle2.style.color = "red";
-             subtitle2.style.fontSize = "16px";
-             subtitle2.style.fontWeight = "700";
+var subtitle1 = document.createElement('div');
+           subtitle1.classList.add('col-12', 'pt-5');
+           subtitle1.innerText = "SHOP NOW";
+           subtitle1.style.color = "red";
+           subtitle1.style.fontSize = "16px";
+           subtitle1.style.fontWeight = "700";
 
+var mainTitle1 = document.createElement('div');
+          mainTitle1.classList.add('col-12', 'pt-2');
+          mainTitle1.innerText = "STAY ON BUDGET, SHOP IN STYLE!";
+          mainTitle1.style.fontSize = "24px";
+          mainTitle1.style.fontWeight = "700";
 
-var mainTitle2 = document.createElement('div');
-            mainTitle2.classList.add('col-12','pt-3');
-            mainTitle2.innerText = "CELEBRATORY COLLECTION OF FESTIVE OUTFITES";
-            mainTitle2.style.fontSize = "24px";
-            mainTitle2.style.fontWeight = "700";
+row.append(subtitle1);
+row.append(mainTitle1);
+container3.append(row);
 
+var imageRow = document.createElement('div');
+       imageRow.style.display = 'flex';
+       imageRow.style.flexWrap = 'wrap';
+       imageRow.style.justifyContent = 'center';
+       imageRow.style.gap = '15px';
+       imageRow.style.marginTop = '40px';
 
-    headingRow2.append(subtitle2);
-    headingRow2.append(mainTitle2);
-    container3.append(headingRow2);
+var box1 = document.createElement('div');
+        box1.style.width = '160px';
 
-var imageRow2 = document.createElement('div');
-            imageRow2.classList.add('row','gy-4', 'pt-4');
+var img1 = document.createElement('img');
+       img1.src = './image/320x480_1.webp';
+       img1.style.width = '100%';
+       img1.style.borderRadius = '10px';
+       img1.classList.add('img-hover');
+box1.append(img1);
+imageRow.append(box1);
 
-var imageData2 = [
-            { src: './image/300x132_kanchipuram.webp',title: 'Kancheepuram' },
-            { src: './image/300x132_georgette.webp',title: 'Georgette Sarees' },
-            { src: './image/300x132_banarasi.webp',title: 'Banarasi Sarees' },
-            { src: './image/300x132_designer.webp',title: 'Designer Sarees' },
-            { src: './image/300x132_organza.webp',title: 'Organza Sarees' },
-            { src: './image/300x132_softsilk.webp',title: 'Soft Silk Sarees' },
-            { src: './image/products-collection-04-1.webp',title:'Kanchi Sarees' },
-            { src: './image/products-collection-05-1.webp',title:'Tissue Sarees' },
-            { src: './image/products-collection-07-1.webp',title:'Linen Sarees' },
-            { src: './image/products-collection-09-1.webp',title:'Chiffon Sarees' },
-            { src: './image/products-collection-10-1.webp',title:'Tussar Silk Sarees' },
-            { src: './image/products-collection-12-1.webp',title:'Chanderi Sarees' }
-];
+var box2 = document.createElement('div');
+         box2.style.width = '160px';
 
-imageData2.forEach(data => {
-var col = document.createElement('div');
-             col.classList.add('col-6', 'col-md-3', 'col-lg-3'); 
+var img2 = document.createElement('img');
+         img2.src = './image/320x480_2.webp';
+         img2.style.width = '100%';
+         img2.style.borderRadius = '10px';
+         img2.classList.add('img-hover');
+box2.append(img2);
+imageRow.append(box2);
 
- var img = document.createElement('img');
-           img.src = data.src;
-           img.alt = data.title;
-           img.alt = "Image";
-           img.style.width = "100%";
-           img.style.borderRadius = "10px";
-           img.style.marginTop ="25px";
-           img.classList.add('img-hover');
+var box3 = document.createElement('div');
+        box3.style.width = '160px';
 
-var title = document.createElement('p');
-           title.innerText = data.title;
-           title.style.fontSize = "17px";
-           title.style.fontWeight = "600";
-           title.style.marginTop = "8px";
-           title.style.color = "#333";
-           title.style.textAlign = "center";
+var img3 = document.createElement('img');
+       img3.src = './image/320x480_3.webp';
+       img3.style.width = '100%';
+       img3.style.borderRadius = '10px';
+       img3.classList.add('img-hover');
+box3.append(img3);
+imageRow.append(box3);
 
-   col.append(img);
-   col.append(title); 
-   imageRow2.append(col);
-});
-   container3.append(imageRow2);
-   document.body.append(container3);
+var box4 = document.createElement('div');
+         box4.style.width = '160px';
+
+var img4 = document.createElement('img');
+       img4.src = './image/320x480_4.webp';
+       img4.style.width = '100%';
+       img4.style.borderRadius = '10px';
+       img4.classList.add('img-hover');
+box4.append(img4);
+imageRow.append(box4);
+
+var box5 = document.createElement('div');
+        box5.style.width = '160px';
+
+var img5 = document.createElement('img');
+       img5.src = './image/320x480_5.webp';
+       img5.style.width = '100%';
+       img5.style.borderRadius = '10px';
+       img5.classList.add('img-hover');
+box5.append(img5);
+imageRow.append(box5);
+
+var box6 = document.createElement('div');
+        box6.style.width = '160px';
+
+var img6 = document.createElement('img');
+       img6.src = './image/320x480_6.webp';
+       img6.style.width = '100%';
+       img6.style.borderRadius = '10px';
+       img6.classList.add('img-hover');
+box6.append(img6);
+imageRow.append(box6);
+
+container3.append(imageRow);
+document.body.append(container3);
 
 
 
 
 var container4 = document.createElement('div');
-             container4.classList.add('container', 'pt-5');
+           container4.classList.add('container');
+           container4.style.paddingTop = "100px";
 
-var row = document.createElement('div');
-         row.classList.add('row', 'gy-4','p-4');
+var rowheading3 = document.createElement('div');
+          rowheading3.style.textAlign = 'center';
+          rowheading3.style.marginBottom = '30px';
+          rowheading3.classList.add('row');
 
-var imageData = [
-           { src: './image/banner1.png'},
-           { src: './image/banner2.png'}
-];
+var subheading3 = document.createElement('div');
+          subheading3.classList.add('col-12');
+          subheading3.innerText = "FEATURED CATEGORIES";
+          subheading3.style.color = "red";
+          subheading3.style.fontSize = "16px";
+          subheading3.style.fontWeight = "700";
 
-imageData.forEach(data => {
-            var col = document.createElement('div');
-            col.classList.add('col-12', 'col-md-6');
+var mainheading3 = document.createElement('div');
+         mainheading3.classList.add('col-12');
+         mainheading3.innerText = "CELEBRATORY COLLECTION OF FESTIVE OUTFITS";
+         mainheading3.style.fontSize = "24px";
+         mainheading3.style.fontWeight = "700";
+         mainheading3.style.paddingTop = "12px";
 
-var img = document.createElement('img');
-            img.src = data.src;
-            img.alt = 'Image';
-            img.classList.add('img-fluid', 'img-hover');
-            img.style.marginTop = "10px"; 
+rowheading3.append(subheading3);
+rowheading3.append(mainheading3);
+container4.append(rowheading3);
 
-    col.append(img);
-    row.append(col);
-});
-   container4.append(row);
-   document.body.append(container4);
+
+var imageRow3 = document.createElement('div');
+       imageRow3.classList.add('row');
+       imageRow3.style.display = 'flex';
+       imageRow3.style.flexWrap = 'wrap';
+       imageRow3.style.gap="20px";
+       imageRow3.style.paddingLeft="50px";
+
+var box1 = document.createElement('div');
+        box1.style.width = '22%';
+        box1.style.textAlign = 'center';
+
+var img1 = document.createElement('img');
+       img1.src = './image/300x132_kanchipuram.webp';
+       img1.style.width = '100%';
+       img1.style.borderRadius = '10px';
+       img1.classList.add('img-hover');
+
+var title1 = document.createElement('p');
+        title1.innerText = "Kancheepuram Sarees";
+        title1.style.fontSize = "15px";
+        title1.style.fontWeight = "600";
+        title1.style.marginTop = "10px";
+        title1.style.color = "black";
+box1.append(img1);
+box1.append(title1);
+imageRow3.append(box1);
+
+var box2 = document.createElement('div');
+        box2.style.width = '22%';
+        box2.style.textAlign = 'center';
+
+var img2 = document.createElement('img');
+        img2.src = './image/300x132_banarasi.webp';
+        img2.style.width = '100%';
+        img2.style.borderRadius = '10px';
+        img2.classList.add('img-hover');
+var title2 = document.createElement('p');
+        title2.innerText = "Banarasi Sarees";
+        title2.style.fontSize = "15px";
+        title2.style.fontWeight = "600";
+        title2.style.marginTop = "10px";
+        title2.style.color = "black";
+box2.append(img2);
+box2.append(title2);
+imageRow3.append(box2);
+
+var box3 = document.createElement('div');
+         box3.style.width = '22%';
+         box3.style.textAlign = 'center';
+
+var img3 = document.createElement('img');
+        img3.src = './image/300x132_designer.webp';
+        img3.style.width = '100%';
+        img3.style.borderRadius = '10px';
+        img3.classList.add('img-hover');
+
+var title3 = document.createElement('p');
+       title3.innerText = "Designer Sarees";
+        title3.style.fontSize = "15px";
+       title3.style.fontWeight = "600";
+       title3.style.marginTop = "10px";
+       title3.style.color = "black";
+box3.append(img3);
+box3.append(title3);
+imageRow3.append(box3);
+
+var box4 = document.createElement('div');
+       box4.style.width = '22%';
+       box4.style.textAlign = 'center';
+
+var img4 = document.createElement('img');
+      img4.src = './image/300x132_organza.webp';
+      img4.style.width = '100%';
+      img4.style.borderRadius = '10px';
+      img4.classList.add('img-hover');
+
+var title4 = document.createElement('p');
+      title4.innerText = "Organza Sarees";
+      title4.style.fontSize = "15px";
+      title4.style.fontWeight = "600";
+      title4.style.marginTop = "10px";
+      title4.style.color = "black";
+box4.append(img4);
+box4.append(title4);
+imageRow3.append(box4);
+
+var box5 = document.createElement('div');
+      box5.style.width = '22%';
+      box5.style.textAlign = 'center';
+var img5 = document.createElement('img');
+       img5.src = './image/300x132_softsilk.webp';
+       img5.style.width = '100%';
+       img5.style.borderRadius = '10px';
+       img5.classList.add('img-hover');
+var title5 = document.createElement('p');
+       title5.innerText = "Soft Silk Sarees";
+       title5.style.fontSize = "15px";
+       title5.style.fontWeight = "600";
+       title5.style.marginTop = "10px";
+       title5.style.color = "black";
+box5.append(img5);
+box5.append(title5);
+imageRow3.append(box5);
+
+var box6 = document.createElement('div');
+       box6.style.width = '22%';
+       box6.style.textAlign = 'center'
+ var img6 = document.createElement('img');
+      img6.src = './image/300x132_georgette.webp';
+      img6.style.width = '100%';
+      img6.style.borderRadius = '10px';
+      img6.classList.add('img-hover');
+var title6 = document.createElement('p');
+       title6.innerText = "Georgette Sarees";
+      title6.style.fontSize = "15px";
+      title6.style.fontWeight = "600";
+      title6.style.marginTop = "10px";
+      title6.style.color = "black";
+box6.append(img6);
+box6.append(title6);
+imageRow3.append(box6);
+
+var box7 = document.createElement('div');
+      box7.style.width = '22%';
+      box7.style.textAlign = 'center';
+
+var img7 = document.createElement('img');
+      img7.src = './image/products-collection-04-1.webp';
+      img7.style.width = '100%';
+      img7.style.borderRadius = '10px';
+      img7.classList.add('img-hover');
+var title7 = document.createElement('p');
+     title7.innerText = "Kanchi Sarees";
+     title7.style.fontSize = "15px";
+      title7.style.fontWeight = "600";
+     title7.style.marginTop = "10px";
+     title7.style.color = "black";
+box7.append(img7);
+box7.append(title7);
+imageRow3.append(box7);
+
+var box8 = document.createElement('div');
+      box8.style.width = '22%';
+      box8.style.textAlign = 'center';
+
+var img8 = document.createElement('img');
+      img8.src = './image/products-collection-05-1.webp';
+      img8.style.width = '100%';
+      img8.style.borderRadius = '10px';
+       img8.classList.add('img-hover');
+var title8 = document.createElement('p');
+     title8.innerText = "Tissue Sarees";
+     title8.style.fontSize = "15px";
+     title8.style.fontWeight = "600";
+     title8.style.marginTop = "10px";
+     title8.style.color = "#333";
+box8.append(img8);
+box8.append(title8);
+imageRow3.append(box8);
+
+var box9 = document.createElement('div');
+       box9.style.width = '22%';
+       box9.style.textAlign = 'center';
+
+var img9 = document.createElement('img');
+       img9.src = './image/products-collection-07-1.webp';
+       img9.style.width = '100%';
+       img9.style.borderRadius = '10px';
+        img9.classList.add('img-hover');
+var title9 = document.createElement('p');
+      title9.innerText = "Linen Sarees";
+      title9.style.fontSize = "15px";
+      title9.style.fontWeight = "600";
+      title9.style.marginTop = "10px";
+      title9.style.color = "black";
+box9.append(img9);
+box9.append(title9);
+imageRow3.append(box9);
+
+var box10 = document.createElement('div');
+       box10.style.width = '22%';
+       box10.style.textAlign = 'center';
+
+var img10 = document.createElement('img');
+       img10.src = './image/products-collection-09-1.webp';
+       img10.style.width = '100%';
+       img10.style.borderRadius = '10px';
+       img10.classList.add('img-hover');
+var title10 = document.createElement('p');
+       title10.innerText = "Chiffon Sarees";
+       title10.style.fontSize = "15px";
+       title10.style.fontWeight = "600";
+       title10.style.marginTop = "10px";
+       title10.style.color = "black";
+box10.append(img10);
+box10.append(title10);
+imageRow3.append(box10);
+
+var box11 = document.createElement('div');
+       box11.style.width = '22%';
+       box11.style.textAlign = 'center';
+
+var img11 = document.createElement('img');
+      img11.src = './image/products-collection-10-1.webp';
+      img11.style.width = '100%';
+      img11.style.borderRadius = '10px';
+      img11.classList.add('img-hover');
+var title11 = document.createElement('p');
+      title11.innerText = "Tussar Silk Sarees";
+      title11.style.fontSize = "15px";
+      title11.style.fontWeight = "600";
+      title11.style.marginTop = "10px";
+      title11.style.color = "black";
+box11.append(img11);
+box11.append(title11);
+imageRow3.append(box11);
+
+var box12 = document.createElement('div');
+      box12.style.width = '22%';
+      box12.style.textAlign = 'center';
+
+var img12 = document.createElement('img');
+      img12.src = './image/products-collection-12-1.webp';
+      img12.style.width = '100%';
+      img12.style.borderRadius = '10px';
+       img12.classList.add('img-hover');
+var title12 = document.createElement('p');
+      title12.innerText = "Chanderi Sarees";
+      title12.style.fontSize = "15px";
+      title12.style.fontWeight = "600";
+      title12.style.marginTop = "10px";
+      title12.style.color = "#333";
+box12.append(img12);
+box12.append(title12);
+imageRow3.append(box12);
+
+container4.append(imageRow3);
+document.body.append(container4);
 
 
 
 
 var container5 = document.createElement('div');
-            container5.classList.add('container');
-            container5.style.paddingTop="110px";
+        container5.classList.add('container', 'pt-5');
 
-var headingrow5 = document.createElement('div');
-             headingrow5.classList.add('row', 'text-center');
+var row = document.createElement('div');
+         row.classList.add('row', 'gy-4', 'p-4');
 
-var subtitle5 = document.createElement('div');
-             subtitle5.classList.add('col-12');
-             subtitle5.innerText = "SHADES OF HAPPINESS";
-             subtitle5.style.color = "red";
-             subtitle5.style.fontSize = "16px";
-             subtitle5.style.fontWeight = "600";
+var col1 = document.createElement('div');
+         col1.classList.add('col-12', 'col-md-6');
 
-var maintitle5 = document.createElement('div');
-             maintitle5.classList.add('col-12', 'pt-2');
-             maintitle5.innerText = "CHECKOUT OUR GALORE OF COLLECTIONS";
-             maintitle5.style.fontSize = "24px";
-             maintitle5.style.fontWeight = "700";
+var img1 = document.createElement('img');
+        img1.src = './image/banner1.png';
+        img1.classList.add('img-fluid', 'img-hover');
+        img1.style.marginTop = "10px";
 
-    headingrow5.append(subtitle5, maintitle5);
-    container5.append(headingrow5);
+col1.appendChild(img1);
+row.appendChild(col1);
 
-var cards = document.createElement('div');
-            cards.style.display = "flex";
-            cards.style.overflowX = "auto";
-            cards.style.gap = "20px";
-            cards.style.paddingTop = "20px";
-            cards.style.scrollbarWidth = "none";
+var col2 = document.createElement('div');
+        col2.classList.add('col-12', 'col-md-6');
 
-var products5 = [
-  {
-          image: './image/13798250-4-scaled.webp',
-          category: 'Crepe Saree',
-          name: 'Black Semi Creps Saree',
-          oldPrice: '₹1,529.00',
-          newPrice: '₹1,376.10'
-  },
-  {
-         image: './image/13809732-4-scaled.webp',
-         category: 'Crepe Saree',
-         name: 'Dark Blue Creps Saree',
-         oldPrice: '₹16,819.00',
-         newPrice: '₹15,137.10'
-  },
-  {
-         image: './image/13820211-5-scaled.webp',
-         category: 'Crepe Saree',
-         name: 'Sandal Semi Crepe Saree',
-         oldPrice: '₹3,145.00',
-         newPrice: '₹2,920.50'
-  },
-  {
-         image: './image/13823045-5-scaled.webp',
-         category: 'Crepe Saree',
-         name: 'Green Crepe Saree',
-         oldPrice: '₹17,919.00',
-         newPrice: '₹16,127.10'
-  },
-  {
-        image: './image/13840901-5-scaled.webp',
-        category: 'Crepe Saree',
-        name: 'Chilly Red Semii Crepe Saree',
-        oldPrice: '₹7,469.00',
-        newPrice: '₹6,137.10'
-  },
-  {
-        image: './image/13823049-5-scaled.webp',
-        category: 'Crepe Saree',
-        name: 'Brown Crepe Saree',
-        oldPrice: '₹16,819.00',
-        newPrice: '₹15,137.10'
-  }
-];
+var img2 = document.createElement('img');
+          img2.src = './image/banner2.png';
+          img2.classList.add('img-fluid', 'img-hover');
+          img2.style.marginTop = "10px";
 
-products5.forEach(product => {
-var card = document.createElement('div');
-           card.style.flexShrink = "0"; 
-           card.style.width = "250px";
-           card.style.borderRadius = "8px";
-           card.style.padding = "10px";
-           card.style.textAlign = "center";
-           card.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+col2.append(img2);
+row.append(col2);
 
-var img = document.createElement('img');
-          img.src = product.image;
-          img.alt = product.name;
-          img.classList.add('img-fluid','pt-3','img-hover');
-          img.style.height = '350px';
-          img.style.width = '300%';
-          img.style.objectFit = 'cover';
-          img.style.borderRadius = '6px';
+container5.append(row);
+document.body.append(container5);
 
-var category = document.createElement('p');
-          category.innerText = product.category;
-          category.style.color = 'gray';
-          category.style.marginBottom = '4px';
-          category.style.fontSize = "14px";
-
-var name = document.createElement('h6');
-          name.innerText = product.name;
-          name.style.fontSize = "16px";
-          name.style.margin = "8px 0";
-
-var price = document.createElement('p');
-          price.innerHTML = `<s>${product.oldPrice}</s> <strong>${product.newPrice}</strong>`;
-          price.style.color = '#000';
-
-   card.append(img, category, name, price);
-   cards.append(card);
-});
-
-  container5.append(cards);
-  document.body.append(container5);
 
 
 
 
 var container6 = document.createElement('div');
-             container6.classList.add('container');
-             container6.style.paddingTop="110px";
+          container6.classList.add('container');
+          container6.style.paddingTop = "110px";
 
 var headingrow6 = document.createElement('div');
-             headingrow6.classList.add('row', 'text-center');
+         headingrow6.classList.add('row', 'text-center');
 
 var subtitle6 = document.createElement('div');
-             subtitle6.classList.add('col-12');
-             subtitle6.innerText = "FLOW IN THE COMFORT OF FLAMBOYANT GRACE";
-             subtitle6.style.color = "red";
-             subtitle6.style.fontSize = "16px";
-             subtitle6.style.fontWeight = "600";
+         subtitle6.classList.add('col-12');
+         subtitle6.innerText = "SHADES OF HAPPINESS";
+         subtitle6.style.color = "red";
+         subtitle6.style.fontSize = "16px";
+         subtitle6.style.fontWeight = "600";
 
 var maintitle6 = document.createElement('div');
-            maintitle6.classList.add('col-12','p-3');
-            maintitle6.innerText = "OUR EXCLUSIVE CHURIDAR COLLECTION";
-            maintitle6.style.fontSize = "24px";
-            maintitle6.style.fontWeight = "700";
+         maintitle6.classList.add('col-12', 'pt-2');
+         maintitle6.innerText = "CHECKOUT OUR GALORE OF COLLECTIONS";
+         maintitle6.style.fontSize = "24px";
+         maintitle6.style.fontWeight = "700";
 
-   headingrow6.append(subtitle6, maintitle6);
-   container6.append(headingrow6);
+headingrow6.append(subtitle6, maintitle6);
+container6.append(headingrow6);
 
-var cards1 = document.createElement('div');
-           cards1.style.display = "flex";
-           cards1.style.overflowX = "auto";
-           cards1.style.gap = "20px";
-           cards1.style.paddingTop = "20px";
-           cards1.style.scrollbarWidth = "none";
+var cards = document.createElement('div');
+       cards.style.display = "flex";
+       cards.style.overflowX = "auto";
+       cards.style.gap = "20px";
+       cards.style.paddingTop = "20px";
+       cards.style.scrollbarWidth = "none";
 
-var products6 = [
-  {
-            image: './image/13892025-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Peach Model Printed Churidar Unstitched',
-            oldPrice: '₹5,885.00',
-            newPrice: '₹5,296.50'
-  },
-  {
-            image: './image/13892028-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Blue Tussar Floral Print Churidar...',
-            oldPrice: '₹11,242.00',
-            newPrice: '₹10,117.80'
-  },
-  {
-            image: './image/13892032-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Levender Crush Organza Plain Churidar',
-            oldPrice: '₹4,301.00',
-            newPrice: '₹3,870.90'
-  },
-  {
-            image: './image/13894285-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Pink Organza Floral Print Churidar...',
-            oldPrice: '₹6,116.00',
-            newPrice: '₹5,504.40'
-  },
-  {
-            image: './image/13894383-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Baby Pink Organza Zari Butta...',
-            oldPrice: '₹4,257.00',
-            newPrice: '₹3,831.30'
-  },
-  {
-            image: './image/13894401-5-scaled.webp',
-            category: 'Churidhar Set',
-            name: 'Yellow Crepe Churidhar Unstitched Material',
-            oldPrice: '₹13,629.00',
-            newPrice: '₹12,266.10'
-  }
-];
-
-products6.forEach(product => {
 var card1 = document.createElement('div');
-           card1.style.flexShrink = "0"; 
-           card1.style.width = "250px";
-           card1.style.borderRadius = "8px";
-           card1.style.padding = "10px";
-           card1.style.textAlign = "center";
-           card1.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+       card1.style.flexShrink = "0";
+       card1.style.width = "250px";
+       card1.style.padding = "10px";
+       card1.style.borderRadius = "8px";
+       card1.style.textAlign = "center";
+       card1.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
 
-var img = document.createElement('img');
-           img.src = product.image;
-           img.alt = product.name;
-           img.classList.add('img-fluid','pt-3','img-hover');
-           img.style.height = '350px';
-           img.style.width = '300%';
-           img.style.objectFit = 'cover';
-           img.style.borderRadius = '6px';
+var img1 = document.createElement('img');
+       img1.src = './image/13798250-4-scaled.webp';
+       img1.style.width = "100%";
+       img1.style.height = "350px";
+       img1.style.objectFit = "cover";
+       img1.style.borderRadius = "6px";
+       img1.classList.add('img-hover');
 
-var category1 = document.createElement('p');
-          category1.innerText = product.category;
-          category1.style.color = 'gray';
-          category1.style.marginBottom = '4px';
-          category1.style.fontSize = "14px";
+var cat1 = document.createElement('p');
+      cat1.innerText = "Crepe Saree";
+      cat1.style.color = 'gray';
+      cat1.style.fontSize = '14px';
+      cat1.style.marginBottom = '4px';
 
 var name1 = document.createElement('h6');
-          name1.innerText = product.name;
-          name1.style.fontSize = "16px";
-          name1.style.margin = "8px 0";
+       name1.innerText = 'Black Semi Creps Saree';
+       name1.style.fontSize = '16px';
+       name1.style.margin = '8px 0';
 
 var price1 = document.createElement('p');
-           price1.innerHTML = `<s>${product.oldPrice}</s> <strong>${product.newPrice}</strong>`;
-           price1.style.color = '#000';
+       price1.innerHTML = `<s>₹1,529.00</s> <strong>₹1,376.10</strong>`;
+       price1.style.color = 'black';
 
-   card1.append(img, category1, name1, price1);
-   cards1.append(card1);
-});
+card1.append(img1, cat1, name1, price1);
+cards.append(card1);
 
-  container6.append(cards1);
-  document.body.append(container6);
+var card2 = document.createElement('div');
+       card2.style.flexShrink = "0";
+       card2.style.width = "250px";
+       card2.style.padding = "10px";
+       card2.style.borderRadius = "8px";
+       card2.style.textAlign = "center";
+       card2.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img2 = document.createElement('img');
+       img2.src = './image/13809732-4-scaled.webp';
+       img2.style.width = "100%";
+       img2.style.height = "350px";
+       img2.style.objectFit = "cover";
+       img2.style.borderRadius = "6px";
+       img2.classList.add('img-hover');
+
+var cat2 = document.createElement('p');
+       cat2.innerText = "Crepe Saree";
+       cat2.style.color = 'gray';
+       cat2.style.fontSize = '14px';
+       cat2.style.marginBottom = '4px';
+
+var name2 = document.createElement('h6');
+        name2.innerText = 'Dark Blue Creps Saree';
+        name2.style.fontSize = '16px';
+        name2.style.margin = '8px 0';
+
+var price2 = document.createElement('p');
+price2.innerHTML = `<s>₹16,819.00</s> <strong>₹15,137.10</strong>`;
+price2.style.color = 'black';
+
+card2.append(img2, cat2, name2, price2);
+cards.append(card2);
+
+var card3 = document.createElement('div');
+       card3.style.flexShrink = "0";
+       card3.style.width = "250px";
+       card3.style.padding = "10px";
+       card3.style.borderRadius = "8px";
+       card3.style.textAlign = "center";
+       card3.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img3 = document.createElement('img');
+       img3.src = './image/13820211-5-scaled.webp';
+       img3.classList.add('img-hover');
+       img3.style.width = "100%";
+       img3.style.height = "350px";
+       img3.style.objectFit = "cover";
+       img3.style.borderRadius = "6px";
+
+var cat3 = document.createElement('p');
+       cat3.innerText = "Crepe Saree";
+       cat3.style.color = 'gray';
+       cat3.style.fontSize = '14px';
+       cat3.style.marginBottom = '4px';
+
+var name3 = document.createElement('h6');
+       name3.innerText = 'Sandal Semi Crepe Saree';
+        name3.style.fontSize = '16px';
+        name3.style.margin = '8px 0';
+
+var price3 = document.createElement('p');
+       price3.innerHTML = `<s>₹3,145.00</s> <strong>₹2,920.50</strong>`;
+       price3.style.color = 'black';
+
+card3.append(img3, cat3, name3, price3);
+cards.append(card3);
+
+var card4 = document.createElement('div');
+       card4.style.flexShrink = "0";
+       card4.style.width = "250px";
+       card4.style.padding = "10px";
+       card4.style.borderRadius = "8px";
+       card4.style.textAlign = "center";
+       card4.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img4 = document.createElement('img');
+       img4.src = './image/13823045-5-scaled.webp';
+       img4.classList.add('img-hover');
+        img4.style.width = "100%";
+       img4.style.height = "350px";
+       img4.style.objectFit = "cover";
+       img4.style.borderRadius = "6px";
+
+var cat4 = document.createElement('p');
+       cat4.innerText = "Crepe Saree";
+       cat4.style.color = 'gray';
+       cat4.style.fontSize = '14px';
+       cat4.style.marginBottom = '4px';
+
+var name4 = document.createElement('h6');
+       name4.innerText = 'Green Crepe Saree';
+       name4.style.fontSize = '16px';
+       name4.style.margin = '8px 0';
+
+var price4 = document.createElement('p');
+       price4.innerHTML = `<s>₹17,919.00</s> <strong>₹16,127.10</strong>`;
+       price4.style.color = '#000';
+
+card4.append(img4, cat4, name4, price4);
+cards.append(card4);
+
+var card5 = document.createElement('div');
+        card5.style.flexShrink = "0";
+       card5.style.width = "250px";
+       card5.style.padding = "10px";
+       card5.style.borderRadius = "8px";
+       card5.style.textAlign = "center";
+       card5.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img5 = document.createElement('img');
+       img5.src = './image/13840901-5-scaled.webp';
+       img5.classList.add('img-hover');
+       img5.style.width = "100%";
+       img5.style.height = "350px";
+       img5.style.objectFit = "cover";
+       img5.style.borderRadius = "6px";
+
+var cat5 = document.createElement('p');
+       cat5.innerText = "Crepe Saree";
+       cat5.style.color = 'gray';
+       cat5.style.fontSize = '14px';
+       cat5.style.marginBottom = '4px';
+
+var name5 = document.createElement('h6');
+       name5.innerText = 'Chilly Red Semi Crepe Saree';
+       name5.style.fontSize = '16px';
+       name5.style.margin = '8px 0';
+
+var price5 = document.createElement('p');
+       price5.innerHTML = `<s>₹7,469.00</s> <strong>₹6,137.10</strong>`;
+       price5.style.color = '#000';
+
+card5.append(img5, cat5, name5, price5);
+cards.append(card5);
+
+var card6 = document.createElement('div');
+       card6.style.flexShrink = "0";
+       card6.style.width = "250px";
+       card6.style.padding = "10px";
+       card6.style.borderRadius = "8px";
+       card6.style.textAlign = "center";
+       card6.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img6 = document.createElement('img');
+       img6.src = './image/13823049-5-scaled.webp';
+       img6.classList.add('img-hover');
+       img6.style.width = "100%";
+       img6.style.height = "350px";
+       img6.style.objectFit = "cover";
+       img6.style.borderRadius = "6px";
+
+var cat6 = document.createElement('p');
+      cat6.innerText = "Crepe Saree";
+       cat6.style.color = 'gray';
+       cat6.style.fontSize = '14px';
+       cat6.style.marginBottom = '4px';
+
+var name6 = document.createElement('h6');
+       name6.innerText = 'Brown Crepe Saree';
+       name5.style.fontSize = '16px';
+       name5.style.margin = '8px 0';
+
+var price6 = document.createElement('p');
+       price6.innerHTML = `<s>₹16,819.00</s> <strong>₹15,137.10</strong>`;
+       price6.style.color = '#000';
+
+card6.append(img6, cat6, name6, price6);
+cards.append(card6);
+
+container6.append(cards);
+document.body.append(container6);
 
 
 
 
-var container7 = document.createElement('footer',);
-          container7.style.backgroundColor = "black";
-          container7.style.color = "white";
-          container7.style.padding = "60px 20px";
-          container7.style.marginTop = "100px";
+var container6 = document.createElement('div');
+         container6.classList.add('container');
+         container6.style.paddingTop = "110px";
+
+var headingrow6 = document.createElement('div');
+         headingrow6.classList.add('row', 'text-center');
+
+var subtitle6 = document.createElement('div');
+       subtitle6.classList.add('col-12');
+       subtitle6.innerText = "FLOW IN THE COMFORT OF FLAMBOYANT GRACE";
+       subtitle6.style.color = "red";
+       subtitle6.style.fontSize = "16px";
+       subtitle6.style.fontWeight = "600";
+
+var maintitle6 = document.createElement('div');
+      maintitle6.classList.add('col-12', 'pt-2');
+      maintitle6.innerText = "OUR EXCLUSIVE CHURIDAR COLLECTION";
+      maintitle6.style.fontSize = "24px";
+      maintitle6.style.fontWeight = "700";
+
+headingrow6.append(subtitle6, maintitle6);
+container6.append(headingrow6);
+
+var cards = document.createElement('div');
+     cards.style.display = "flex";
+     cards.style.overflowX = "auto";
+     cards.style.gap = "20px";
+     cards.style.paddingTop = "20px";
+     cards.style.scrollbarWidth = "none";
+
+var card1 = document.createElement('div');
+     card1.style.flexShrink = "0";
+     card1.style.width = "250px";
+     card1.style.padding = "10px";
+     card1.style.borderRadius = "8px";
+     card1.style.textAlign = "center";
+     card1.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img1 = document.createElement('img');
+     img1.src = './image/13892025-5-scaled.webp';
+     img1.style.width = "100%";
+     img1.style.height = "350px";
+     img1.style.objectFit = "cover";
+     img1.style.borderRadius = "6px";
+     img1.classList.add('img-hover');
+
+var cat1 = document.createElement('p');
+     cat1.innerText = "Churider set";
+     cat1.style.color = 'gray';
+     cat1.style.fontSize = '14px';
+     cat1.style.marginBottom = '4px';
+
+var name1 = document.createElement('h6');
+     name1.innerText = 'Peach Model printead Churidar unstitched';
+     name1.style.fontSize = '16px';
+     name1.style.margin = '8px 0';
+
+var price1 = document.createElement('p');
+      price1.innerHTML = `<s>₹5,885.00</s> <strong>₹5,296.50</strong>`;
+      price1.style.color = 'black';
+
+card1.append(img1, cat1, name1, price1);
+cards.append(card1);
+
+var card2 = document.createElement('div');
+     card2.style.flexShrink = "0";
+     card2.style.width = "250px";
+     card2.style.padding = "10px";
+     card2.style.borderRadius = "8px";
+     card2.style.textAlign = "center";
+     card2.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img2 = document.createElement('img');
+     img2.src = './image/13892028-5-scaled.webp';
+     img2.classList.add('img-hover');
+     img2.style.width = "100%";
+     img2.style.height = "350px";
+     img2.style.objectFit = "cover";
+     img2.style.borderRadius = "6px";
+
+var cat2 = document.createElement('p');
+     cat1.innerText = "Churider set";
+     cat1.style.color = 'gray';
+     cat1.style.fontSize = '14px';
+     cat1.style.marginBottom = '4px';   
+
+var name2 = document.createElement('h6');
+       name2.innerText = 'Blue Tussar Floral print Churidar...';
+        name2.style.fontSize = '16px';
+        name2.style.margin = '8px 0';
+
+var price2 = document.createElement('p');
+       price2.innerHTML = `<s>₹11,242.00</s> <strong>₹10,117.50</strong>`;
+       price2.style.color = 'black';
+
+card2.append(img2, cat2, name2, price2);
+cards.append(card2);
+
+var card3 = document.createElement('div');
+     card3.style.flexShrink = "0";
+     card3.style.width = "250px";
+     card3.style.padding = "10px";
+     card3.style.borderRadius = "8px";
+     card3.style.textAlign = "center";
+     card3.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img3 = document.createElement('img');
+     img3.src = './image/13892032-5-scaled.webp';
+     img3.classList.add('img-hover');
+     img3.style.width = "100%";
+     img3.style.height = "350px";
+     img3.style.objectFit = "cover";
+     img3.style.borderRadius = "6px";
+
+var cat3 = document.createElement('p');
+     cat3.innerText = "Churider set";
+     cat3.style.color = 'gray';
+     cat3.style.fontSize = '14px';
+     cat3.style.marginBottom = '4px';   
+
+var name3 = document.createElement('h6');
+       name3.innerText = 'Levender crush organza plain churidar';
+       name3.style.fontSize = '16px';
+       name3.style.margin = '8px 0';
+
+var price3 = document.createElement('p');
+       price3.innerHTML = `<s>₹4,301.00</s> <strong>₹3,807.90</strong>`;
+       price3.style.color = 'black';
+
+card3.append(img3, cat3, name3, price3);
+cards.append(card3);
+
+var card4 = document.createElement('div');
+     card4.style.flexShrink = "0";
+     card4.style.width = "250px";
+     card4.style.padding = "10px";
+     card4.style.borderRadius = "8px";
+     card4.style.textAlign = "center";
+     card4.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img4 = document.createElement('img');
+     img4.src = './image/13894285-5-scaled.webp';
+     img4.classList.add('img-hover');
+     img4.style.width = "100%";
+     img4.style.height = "350px";
+     img4.style.objectFit = "cover";
+     img4.style.borderRadius = "6px";
+
+var cat4 = document.createElement('p');
+     cat4.innerText = "Churider set";
+     cat4.style.color = 'gray';
+     cat4.style.fontSize = '14px';
+     cat4.style.marginBottom = '4px';   
+
+var name4 = document.createElement('h6');
+       name4.innerText = 'Pink Organza Floral print Churider...';
+       name4.style.fontSize = '16px';
+       name4.style.margin = '8px 0';
+
+var price4 = document.createElement('p');
+      price4.innerHTML = `<s>₹6,116.00</s> <strong>₹5,504.50</strong>`;
+      price4.style.color = 'black';
+
+card4.append(img4, cat4, name4, price4);
+cards.append(card4);
+
+var card5 = document.createElement('div');
+     card5.style.flexShrink = "0";
+     card5.style.width = "250px";
+     card5.style.padding = "10px";
+     card5.style.borderRadius = "8px";
+     card5.style.textAlign = "center";
+     card5.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img5 = document.createElement('img');
+     img5.src = './image/13894383-5-scaled.webp';
+     img5.classList.add('img-hover');
+     img5.style.width = "100%";
+     img5.style.height = "350px";
+     img5.style.objectFit = "cover";
+     img5.style.borderRadius = "6px";
+
+var cat5 = document.createElement('p');
+     cat5.innerText = "Churider set";
+     cat5.style.color = 'gray';
+     cat5.style.fontSize = '14px';
+     cat5.style.marginBottom = '4px';   
+
+var name5 = document.createElement('h6');
+     name5.innerText = 'Baby pink organza zari butta...';
+     name5.style.fontSize = '16px';
+     name5.style.margin = '8px 0';
+
+var price5 = document.createElement('p');
+     price5.innerHTML = `<s>₹4,257.00</s> <strong>₹3,831.10</strong>`;
+     price5.style.color = 'black';
+
+card5.append(img5, cat5, name5, price5);
+cards.append(card5);
+
+var card6 = document.createElement('div');
+     card6.style.flexShrink = "0";
+     card6.style.width = "250px";
+     card6.style.padding = "10px";
+     card6.style.borderRadius = "8px";
+     card6.style.textAlign = "center";
+     card6.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+
+var img6 = document.createElement('img');
+     img6.src = './image/13894401-5-scaled.webp';
+     img6.classList.add('img-hover');
+     img6.style.width = "100%";
+     img6.style.height = "350px";
+     img6.style.objectFit = "cover";
+     img6.style.borderRadius = "6px";
+
+var cat6 = document.createElement('p');
+     cat6.innerText = "Churider set";
+     cat6.style.color = 'gray';
+     cat6.style.fontSize = '14px';
+     cat6.style.marginBottom = '4px';  
+
+var name6 = document.createElement('h6');
+     name6.innerText = 'Yellow crepe cheridar Unstitched meterial';
+      name6.style.fontSize = '16px';
+     name6.style.margin = '8px 0';
+
+var price6 = document.createElement('p');
+       price6.innerHTML = `<s>₹13,629.00</s> <strong>₹12,266.10</strong>`;
+       price6.style.color = 'black';
+
+card6.append(img6, cat6, name6, price6);
+cards.append(card6);
+
+container6.append(cards);
+document.body.append(container6);
+
+
+
+
+
+var container8 = document.createElement('footer');
+      container8.style.backgroundColor = "black";
+      container8.style.color = "white";
+      container8.style.padding = "60px 20px";
+      container8.style.marginTop = "100px";
 
 var footerbox = document.createElement('div');
-           footerbox.style.display = "flex";
-           footerbox.style.flexWrap = "wrap";
-           footerbox.style.justifyContent = "space-between";
-           footerbox.style.gap = "30px";
+     footerbox.style.display = "flex";
+     footerbox.style.flexWrap = "wrap";
+     footerbox.style.justifyContent = "space-between";
+     footerbox.style.gap = "30px";
 
-var footerSections = [
-  {
-         title: "Quick Links",
-         items: ["About Us", "Sarees", "Churidar Set", "Collections"]
-  },
-  {
-         title: "Policies",
-         items: ["Shipping Policy", "Privacy Policy", "Returns Policy", "Terms & Conditions"]
-  },
-  {
-         title: "Let Us Help You",
-         items: ["Help / FAQ", "Store Locator", "Order Tracking", "Blogs"]
-  },
-  {
-         title: "Get in Touch",
-         items: ["Email: shop@seematti.com","Call: +91 9841434500","+91 484 235 3523 / 411 2233"]    
-  }
-];
+var col1 = document.createElement('div');
+     col1.style.flex = "1 1 200px";
 
-footerSections.forEach(section => {
-  var col = document.createElement('div');
-         col.style.flex = "1 1 200px";
+var heading1 = document.createElement('h4');
+    heading1.innerText = "Quick Links";
+    heading1.style.marginBottom = "15px";
+    heading1.style.fontSize = "24px";
+    heading1.style.color = "white";
 
-var heading = document.createElement('h4');
-          heading.innerText = section.title;
-          heading.style.marginBottom = "15px";
-          heading.style.fontSize = "16px";
-          heading.style.color = "white";
+var p1 = document.createElement('p');
+    p1.innerText = "About Us";
+    p1.style.margin = "5px 0";
+    p1.style.fontSize = "14px";
+    p1.style.color = "white";
 
-   col.appendChild(heading);
+var p2 = document.createElement('p');
+    p2.innerText = "Sarees";
+    p2.style.margin = "5px 0";
+    p2.style.fontSize = "14px";
+    p2.style.color = "white";
 
-section.items.forEach(item => {
- var p = document.createElement('p');
-            p.innerText = item;
-            p.style.margin = "5px 0";
-            p.style.fontSize = "14px";
-            p.style.color = "#ccc";
-     col.appendChild(p);
- });
-   footerbox.appendChild(col);
-});
+var p3 = document.createElement('p');
+    p3.innerText = "Churidar Set";
+    p3.style.margin = "5px 0";
+    p3.style.fontSize = "14px";
+    p3.style.color = "white";
 
-   container7.appendChild(footerbox);
-   document.body.appendChild(container7);
+var p4 = document.createElement('p');
+    p4.innerText = "Collections";
+    p4.style.margin = "5px 0";
+    p4.style.fontSize = "14px";
+    p4.style.color = "white";
+
+col1.append(heading1, p1, p2, p3, p4);
 
 
+var col2 = document.createElement('div');
+     col2.style.flex = "1 1 200px";
+
+var heading2 = document.createElement('h4');
+    heading2.innerText = "Policies";
+    heading2.style.marginBottom = "15px";
+    heading2.style.fontSize = "24px";
+    heading2.style.color = "white";
+
+var p5 = document.createElement('p');
+    p5.innerText = "Shipping Policy";
+    p5.style.margin = "5px 0";
+    p5.style.fontSize = "14px";
+    p5.style.color = "white";
+
+var p6 = document.createElement('p');
+    p6.innerText = "Privacy Policy";
+    p6.style.margin = "5px 0";
+    p6.style.fontSize = "14px";
+    p6.style.color = "whitw";
+
+var p7 = document.createElement('p');
+    p7.innerText = "Returns Policy";
+    p7.style.margin = "5px 0";
+    p7.style.fontSize = "14px";
+    p7.style.color = "whitw";
+
+var p8 = document.createElement('p');
+    p8.innerText = "Terms & Conditions";
+    p8.style.margin = "5px 0";
+    p8.style.fontSize = "14px";
+    p8.style.color = "whitw";
+
+col2.append(heading2, p5, p6, p7, p8);
 
 
+var col3 = document.createElement('div');
+     col3.style.flex = "1 1 200px";
+
+var heading3 = document.createElement('h4');
+      heading3.innerText = "Let Us Help You";
+      heading3.style.marginBottom = "15px";
+      heading3.style.fontSize = "24px";
+      heading3.style.color = "white";
+
+var p9 = document.createElement('p');
+     p9.innerText = "Help / FAQ";
+     p9.style.margin = "5px 0";
+     p9.style.fontSize = "14px";
+     p9.style.color = "white";
+
+var p10 = document.createElement('p');
+     p10.innerText = "Store Locator";
+     p10.style.margin = "5px 0";
+     p10.style.fontSize = "14px";
+     p10.style.color = "white";
+
+var p11 = document.createElement('p');
+     p11.innerText = "Order Tracking";
+     p11.style.margin = "5px 0";
+     p11.style.fontSize = "14px";
+     p11.style.color = "white";
+
+var p12= document.createElement('p');
+     p12.innerText = "Blogs";
+     p12.style.margin = "5px 0";
+     p12.style.fontSize = "14px";
+     p12.style.color = "white";
+
+col3.append(heading3, p9, p10, p11, p12);
 
 
+var col4 = document.createElement('div');
+      col4.style.flex = "1 1 200px";
 
-   
+var heading4 = document.createElement('h4');
+      heading4.innerText = "Get in Touch";
+      heading4.style.marginBottom = "15px";
+      heading4.style.fontSize = "24px";
+      heading4.style.color = "white";
+
+var p13 = document.createElement('p');
+      p13.innerText = "Email: shop@seematti.com";
+      p13.style.margin = "5px 0";
+      p13.style.fontSize = "14px";
+      p13.style.color = "white";
+
+var p14 = document.createElement('p');
+     p14.innerText = "Call: +91 9841434500";
+     p14.style.margin = "5px 0";
+     p14.style.fontSize = "14px";
+     p14.style.color = "white";
+
+var p15 = document.createElement('p');
+     p15.innerText = "+91 484 235 3523 / 411 2233";
+     p15.style.margin = "5px 0";
+     p15.style.fontSize = "14px";
+     p15.style.color = "white";
+
+col4.append(heading4, p13, p14, p15);
+
+footerbox.append(col1, col2, col3, col4);
+container8.append(footerbox);
+document.body.append(container8);
