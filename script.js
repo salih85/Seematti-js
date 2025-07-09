@@ -15,6 +15,7 @@ var navbar = document.createElement('div');
            navbar.style.display = "flex";
            navbar.style.justifyContent = "space-between";
            navbar.style.alignItems = "center";
+           navbar.style.border="transpernt";
     document.body.append(navbar);
 
 var navbarleft = document.createElement('div');
@@ -22,12 +23,14 @@ var navbarleft = document.createElement('div');
             navbarleft.style.alignItems = "center";
             navbarleft.style.gap = "35px";
             navbarleft.style.paddingTop = "30px";
+            navbarleft.style.border="transpernt";
     navbar.append(navbarleft);
 
 var logo = document.createElement('img');
             logo.setAttribute('src', './image/Web-Logo.png.webp');
             logo.style.width = "230px";
             logo.style.paddingLeft = "40px";
+            logo.style.border="transpernt";
     navbarleft.append(logo);
 
 var nav1 = document.createElement('i');
@@ -68,6 +71,7 @@ var navbarright = document.createElement('div');
              navbarright.style.paddingTop="30px";
              navbarright.style.alignItems = "center";
              navbarright.style.gap = "20px";
+             navbarright.style.border="transpernt";
     navbar.append(navbarright);
 
 var searchbox = document.createElement('div');
@@ -125,6 +129,7 @@ var toggleIcon = document.createElement('i');
 
 var wrapper = document.createElement('div');
               wrapper.classList.add('section-image'); 
+              wrapper.style.border="transpernt";
 
 var section = document.createElement('img');
                 section.setAttribute('src', './image/Web-banner_2075x675_3 (1).webp');
@@ -142,6 +147,7 @@ var Container1 = document.createElement('div');
            Container1.style.justifyContent = "center";
            Container1.style.gap = "15px";
            Container1.style.padding = "10px";
+           Container1.style.border="transpernt";
 
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
@@ -280,6 +286,7 @@ document.body.append(Container1);
 
 var container2 = document.createElement('div');
          container2.classList.add('container', 'pt-5');
+         container2.style.border="transpernt";
 
 var row = document.createElement('div');
           row.classList.add('row', 'text-center');
@@ -360,6 +367,7 @@ document.body.append(container2);
 
 var container3 = document.createElement('div');
            container3.classList.add('container', 'pt-5');
+           container3.style.border="transpernt";
 
 var row = document.createElement('div');
            row.classList.add('row', 'text-center');
@@ -463,6 +471,7 @@ document.body.append(container3);
 var container4 = document.createElement('div');
            container4.classList.add('container');
            container4.style.paddingTop = "100px";
+           container4.style.border="transpernt";
 
 var rowheading3 = document.createElement('div');
           rowheading3.style.textAlign = 'center';
@@ -732,6 +741,7 @@ document.body.append(container4);
 
 var container5 = document.createElement('div');
         container5.classList.add('container', 'pt-5');
+        container5.style.border="transpernet";
 
 var row = document.createElement('div');
          row.classList.add('row', 'gy-4', 'p-4');
@@ -794,6 +804,7 @@ var cards = document.createElement('div');
        cards.style.gap = "20px";
        cards.style.paddingTop = "20px";
        cards.style.scrollbarWidth = "none";
+       cards.style.border="transpernt";
 
 var card1 = document.createElement('div');
        card1.style.flexShrink = "0";
@@ -1034,6 +1045,7 @@ var cards = document.createElement('div');
      cards.style.gap = "20px";
      cards.style.paddingTop = "20px";
      cards.style.scrollbarWidth = "none";
+     cards.style.border="transpernt";
 
 var card1 = document.createElement('div');
      card1.style.flexShrink = "0";
@@ -1259,7 +1271,7 @@ var footerbox = document.createElement('div');
      footerbox.style.gap = "30px";
 
 var col1 = document.createElement('div');
-     col1.style.flex = "1 1 200px";
+     col1.style.width = "200px";
 
 var heading1 = document.createElement('h4');
     heading1.innerText = "Quick Links";
@@ -1295,7 +1307,7 @@ col1.append(heading1, p1, p2, p3, p4);
 
 
 var col2 = document.createElement('div');
-     col2.style.flex = "1 1 200px";
+     col2.style.width = "200px";
 
 var heading2 = document.createElement('h4');
     heading2.innerText = "Policies";
@@ -1331,7 +1343,7 @@ col2.append(heading2, p5, p6, p7, p8);
 
 
 var col3 = document.createElement('div');
-     col3.style.flex = "1 1 200px";
+     col3.style.width = "200px";
 
 var heading3 = document.createElement('h4');
       heading3.innerText = "Let Us Help You";
@@ -1367,7 +1379,7 @@ col3.append(heading3, p9, p10, p11, p12);
 
 
 var col4 = document.createElement('div');
-      col4.style.flex = "1 1 200px";
+      col4.style.width = "200px";
 
 var heading4 = document.createElement('h4');
       heading4.innerText = "Get in Touch";
@@ -1398,3 +1410,5 @@ col4.append(heading4, p13, p14, p15);
 footerbox.append(col1, col2, col3, col4);
 container8.append(footerbox);
 document.body.append(container8);
+
+
