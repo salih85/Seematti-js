@@ -285,7 +285,7 @@ document.body.append(Container1);
 
 
 var container2 = document.createElement('div');
-         container2.classList.add('container', 'pt-5');
+         container2.classList.add('container', 'pt-5','pl-4');
          container2.style.border="transpernt";
 
 var row = document.createElement('div');
@@ -310,15 +310,12 @@ container2.append(row);
 
 
 var imageRow = document.createElement('div');
-       imageRow.style.display = 'flex';
-       imageRow.style.flexWrap = 'wrap';
-       imageRow.style.justifyContent = 'center';
-       imageRow.style.gap = '15px';
+       imageRow.classList.add('row');
        imageRow.style.marginTop = '40px';
        imageRow.style.width = '100%';
 
 var box1 = document.createElement('div');
-        box1.style.width = '22%';
+         box1.classList.add('col-6','col-md-3','col-lg-3');
 
 var img1 = document.createElement('img');
       img1.src = './image/642x856_2-1.webp';
@@ -329,7 +326,7 @@ box1.append(img1);
 imageRow.append(box1);
 
 var box2 = document.createElement('div');
-       box2.style.width = '22%';
+        box2.classList.add('col-6','col-md-3','col-lg-3');
 
 var img2 = document.createElement('img');
        img2.src = './image/642x856_3-1.webp';
@@ -340,22 +337,24 @@ box2.append(img2);
 imageRow.append(box2);
 
 var box3 = document.createElement('div');
-       box3.style.width = '22%';
+        box3.classList.add('col-6','col-md-3','col-lg-3');
 var img3 = document.createElement('img');
        img3.src = './image/642x856_4-1.webp';
        img3.style.width = '100%';
        img3.style.borderRadius = '10px';
        img3.classList.add('img-hover');
+       img3.style.marginTop="10px";
 box3.append(img3);
 imageRow.append(box3);
 
 var box4 = document.createElement('div');
-        box4.style.width = '22%';
+         box4.classList.add('col-6','col-md-3','col-lg-3');
 var img4 = document.createElement('img');
         img4.src = './image/642x856-1.webp';
         img4.style.width = '100%';
         img4.style.borderRadius = '10px';
         img4.classList.add('img-hover');
+        img4.style.marginTop="10px";
 box4.append(img4);
 imageRow.append(box4);
 
@@ -390,75 +389,78 @@ row.append(mainTitle1);
 container3.append(row);
 
 var imageRow = document.createElement('div');
-       imageRow.style.display = 'flex';
-       imageRow.style.flexWrap = 'wrap';
-       imageRow.style.justifyContent = 'center';
-       imageRow.style.gap = '15px';
-       imageRow.style.marginTop = '40px';
+       imageRow.classList.add('row','pr-3','pl-3');
+       imageRow.style.paddingTop = '40px';
 
 var box1 = document.createElement('div');
-        box1.style.width = '160px';
+         box1.classList.add('col-4','col-md-2','col-lg-2');
 
-var img1 = document.createElement('img');
+var img1 = document.createElement('img',);
        img1.src = './image/320x480_1.webp';
        img1.style.width = '100%';
        img1.style.borderRadius = '10px';
        img1.classList.add('img-hover');
+        img1.style.marginTop="8px";
 box1.append(img1);
 imageRow.append(box1);
 
 var box2 = document.createElement('div');
-         box2.style.width = '160px';
+         box2.classList.add('col-4','col-md-2','col-lg-2');
 
 var img2 = document.createElement('img');
          img2.src = './image/320x480_2.webp';
          img2.style.width = '100%';
          img2.style.borderRadius = '10px';
          img2.classList.add('img-hover');
+         img2.style.marginTop="8px";
 box2.append(img2);
 imageRow.append(box2);
 
 var box3 = document.createElement('div');
-        box3.style.width = '160px';
+        box3.classList.add('col-4','col-md-2','col-lg-2');
 
 var img3 = document.createElement('img');
        img3.src = './image/320x480_3.webp';
        img3.style.width = '100%';
        img3.style.borderRadius = '10px';
        img3.classList.add('img-hover');
+       img3.style.marginTop="8px";
 box3.append(img3);
 imageRow.append(box3);
 
 var box4 = document.createElement('div');
-         box4.style.width = '160px';
+        box4.classList.add('col-4','col-md-2','col-lg-2');
 
 var img4 = document.createElement('img');
        img4.src = './image/320x480_4.webp';
        img4.style.width = '100%';
        img4.style.borderRadius = '10px';
        img4.classList.add('img-hover');
+       img4.style.marginTop="12px";
 box4.append(img4);
 imageRow.append(box4);
 
 var box5 = document.createElement('div');
-        box5.style.width = '160px';
+        box5.classList.add('col-4','col-md-2','col-lg-2');
 
 var img5 = document.createElement('img');
        img5.src = './image/320x480_5.webp';
        img5.style.width = '100%';
        img5.style.borderRadius = '10px';
        img5.classList.add('img-hover');
+       img5.style.marginTop="12px";
 box5.append(img5);
 imageRow.append(box5);
 
 var box6 = document.createElement('div');
-        box6.style.width = '160px';
+        box6.classList.add('col-4','col-md-2','col-lg-2');
 
 var img6 = document.createElement('img');
        img6.src = './image/320x480_6.webp';
        img6.style.width = '100%';
        img6.style.borderRadius = '10px';
        img6.classList.add('img-hover');
+       img6.style.marginTop="12px";
 box6.append(img6);
 imageRow.append(box6);
 
@@ -498,80 +500,82 @@ container4.append(rowheading3);
 
 
 var imageRow3 = document.createElement('div');
-       imageRow3.classList.add('row');
-       imageRow3.style.display = 'flex';
-       imageRow3.style.flexWrap = 'wrap';
-       imageRow3.style.gap="20px";
-       imageRow3.style.paddingLeft="50px";
+      imageRow3.classList.add('row', 'justify-content-center', 'g-2');
+      imageRow3.style.paddingLeft = "30px";
+      imageRow3.style.paddingTop="30px";
 
 var box1 = document.createElement('div');
-        box1.style.width = '22%';
-        box1.style.textAlign = 'center';
+      box1.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
+      box1.style.textAlign = 'center';
 
 var img1 = document.createElement('img');
-       img1.src = './image/300x132_kanchipuram.webp';
-       img1.style.width = '100%';
-       img1.style.borderRadius = '10px';
-       img1.classList.add('img-hover');
+     img1.src = './image/300x132_kanchipuram.webp';
+     img1.style.width = '100%';
+     img1.style.borderRadius = '10px';
+     img1.classList.add('img-hover');
 
 var title1 = document.createElement('p');
-        title1.innerText = "Kancheepuram Sarees";
-        title1.style.fontSize = "15px";
-        title1.style.fontWeight = "600";
-        title1.style.marginTop = "10px";
-        title1.style.color = "black";
+     title1.innerText = "Kancheepuram Sarees";
+     title1.style.fontSize = "15px";
+     title1.style.fontWeight = "600";
+     title1.style.marginTop = "6px";
+     title1.style.color = "black";
+
 box1.append(img1);
 box1.append(title1);
 imageRow3.append(box1);
 
 var box2 = document.createElement('div');
-        box2.style.width = '22%';
-        box2.style.textAlign = 'center';
+       box2.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
+       box2.style.textAlign = 'center';
 
 var img2 = document.createElement('img');
-        img2.src = './image/300x132_banarasi.webp';
-        img2.style.width = '100%';
-        img2.style.borderRadius = '10px';
-        img2.classList.add('img-hover');
+       img2.src = './image/300x132_banarasi.webp';
+       img2.style.width = '100%';
+       img2.style.borderRadius = '10px';
+       img2.classList.add('img-hover');
+
 var title2 = document.createElement('p');
-        title2.innerText = "Banarasi Sarees";
-        title2.style.fontSize = "15px";
-        title2.style.fontWeight = "600";
-        title2.style.marginTop = "10px";
-        title2.style.color = "black";
+      title2.innerText = "Banarasi Sarees";
+      title2.style.fontSize = "15px";
+      title2.style.fontWeight = "600";
+      title2.style.marginTop = "6px";
+      title2.style.color = "black";
+
 box2.append(img2);
 box2.append(title2);
 imageRow3.append(box2);
 
 var box3 = document.createElement('div');
-         box3.style.width = '22%';
-         box3.style.textAlign = 'center';
+      box3.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
+      box3.style.textAlign = 'center';
 
 var img3 = document.createElement('img');
-        img3.src = './image/300x132_designer.webp';
-        img3.style.width = '100%';
-        img3.style.borderRadius = '10px';
-        img3.classList.add('img-hover');
+      img3.src = './image/300x132_designer.webp';
+      img3.style.width = '100%';
+      img3.style.borderRadius = '10px';
+      img3.classList.add('img-hover');
 
 var title3 = document.createElement('p');
-       title3.innerText = "Designer Sarees";
-        title3.style.fontSize = "15px";
-       title3.style.fontWeight = "600";
-       title3.style.marginTop = "10px";
-       title3.style.color = "black";
+     title3.innerText = "Designer Sarees";
+     title3.style.fontSize = "15px";
+     title3.style.fontWeight = "600";
+     title3.style.marginTop = "6px";
+     title3.style.color = "black";
+
 box3.append(img3);
 box3.append(title3);
 imageRow3.append(box3);
 
 var box4 = document.createElement('div');
-       box4.style.width = '22%';
-       box4.style.textAlign = 'center';
+      box4.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
+      box4.style.textAlign = 'center';
 
 var img4 = document.createElement('img');
-      img4.src = './image/300x132_organza.webp';
-      img4.style.width = '100%';
-      img4.style.borderRadius = '10px';
-      img4.classList.add('img-hover');
+     img4.src = './image/300x132_organza.webp';
+     img4.style.width = '100%';
+     img4.style.borderRadius = '10px';
+     img4.classList.add('img-hover');
 
 var title4 = document.createElement('p');
       title4.innerText = "Organza Sarees";
@@ -579,18 +583,20 @@ var title4 = document.createElement('p');
       title4.style.fontWeight = "600";
       title4.style.marginTop = "10px";
       title4.style.color = "black";
+
 box4.append(img4);
 box4.append(title4);
 imageRow3.append(box4);
 
 var box5 = document.createElement('div');
-      box5.style.width = '22%';
+      box5.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
       box5.style.textAlign = 'center';
 var img5 = document.createElement('img');
        img5.src = './image/300x132_softsilk.webp';
        img5.style.width = '100%';
        img5.style.borderRadius = '10px';
        img5.classList.add('img-hover');
+
 var title5 = document.createElement('p');
        title5.innerText = "Soft Silk Sarees";
        title5.style.fontSize = "15px";
@@ -602,7 +608,7 @@ box5.append(title5);
 imageRow3.append(box5);
 
 var box6 = document.createElement('div');
-       box6.style.width = '22%';
+       box6.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
        box6.style.textAlign = 'center'
  var img6 = document.createElement('img');
       img6.src = './image/300x132_georgette.webp';
@@ -620,7 +626,7 @@ box6.append(title6);
 imageRow3.append(box6);
 
 var box7 = document.createElement('div');
-      box7.style.width = '22%';
+      box7.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
       box7.style.textAlign = 'center';
 
 var img7 = document.createElement('img');
@@ -639,7 +645,7 @@ box7.append(title7);
 imageRow3.append(box7);
 
 var box8 = document.createElement('div');
-      box8.style.width = '22%';
+      box8.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
       box8.style.textAlign = 'center';
 
 var img8 = document.createElement('img');
@@ -658,7 +664,7 @@ box8.append(title8);
 imageRow3.append(box8);
 
 var box9 = document.createElement('div');
-       box9.style.width = '22%';
+       box9.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
        box9.style.textAlign = 'center';
 
 var img9 = document.createElement('img');
@@ -677,7 +683,7 @@ box9.append(title9);
 imageRow3.append(box9);
 
 var box10 = document.createElement('div');
-       box10.style.width = '22%';
+       box10.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
        box10.style.textAlign = 'center';
 
 var img10 = document.createElement('img');
@@ -696,7 +702,7 @@ box10.append(title10);
 imageRow3.append(box10);
 
 var box11 = document.createElement('div');
-       box11.style.width = '22%';
+       box11.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
        box11.style.textAlign = 'center';
 
 var img11 = document.createElement('img');
@@ -715,7 +721,7 @@ box11.append(title11);
 imageRow3.append(box11);
 
 var box12 = document.createElement('div');
-      box12.style.width = '22%';
+      box12.classList.add('col-6','col-sm-6','col-md-3','col-lg-3','mb-2');
       box12.style.textAlign = 'center';
 
 var img12 = document.createElement('img');
@@ -754,8 +760,8 @@ var img1 = document.createElement('img');
         img1.classList.add('img-fluid', 'img-hover');
         img1.style.marginTop = "10px";
 
-col1.appendChild(img1);
-row.appendChild(col1);
+col1.append(img1);
+row.append(col1);
 
 var col2 = document.createElement('div');
         col2.classList.add('col-12', 'col-md-6');
