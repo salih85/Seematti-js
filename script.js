@@ -140,14 +140,14 @@ var section = document.createElement('img');
 
 
 
-var Container1 = document.createElement('div');
-           Container1.classList.add = ('row');
-           Container1.style.display = "flex";
-           Container1.style.flexWrap = "wrap";
-           Container1.style.justifyContent = "center";
-           Container1.style.gap = "15px";
-           Container1.style.padding = "10px";
-           Container1.style.border="transpernt";
+var container1 = document.createElement('div');
+           container1.classList.add = ('row');
+           container1.style.display = "flex";
+           container1.style.flexWrap = "wrap";
+           container1.style.justifyContent = "center";
+           container1.style.gap = "15px";
+           container1.style.padding = "10px";
+           container1.style.border="transpernt";
 
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
@@ -169,7 +169,7 @@ var title1 = document.createElement('p');
 
   box1.append(img1);
   box1.append(title1);
-  Container1.append(box1);
+  container1.append(box1);
 
 var box2 = document.createElement('div');
           box2.style.textAlign = "center";
@@ -190,7 +190,7 @@ var title2 = document.createElement('p');
           title2.style.color = "black";
 box2.append(img2);
 box2.append(title2);
-Container1.append(box2);
+container1.append(box2);
 
 var box3 = document.createElement('div');
          box3.style.textAlign = "center";
@@ -212,7 +212,7 @@ var title3 = document.createElement('p');
 
 box3.append(img3);
 box3.append(title3);
-Container1.append(box3);
+container1.append(box3);
 
 var box4 = document.createElement('div');
          box4.style.textAlign = "center";
@@ -234,7 +234,7 @@ var title4 = document.createElement('p');
 
 box4.append(img4);
 box4.append(title4);
-Container1.append(box4);
+container1.append(box4);
 
 var box5 = document.createElement('div');
          box5.style.textAlign = "center";
@@ -256,7 +256,7 @@ var title5 = document.createElement('p');
 
 box5.append(img5);
 box5.append(title5);
-Container1.append(box5);
+container1.append(box5);
 
 var box6 = document.createElement('div');
        box6.style.textAlign = "center";
@@ -278,8 +278,8 @@ var title6 = document.createElement('p');
 
 box6.append(img6);
 box6.append(title6);
-Container1.append(box6);
-document.body.append(Container1);
+container1.append(box6);
+document.body.append(container1);
 
 
 
@@ -615,7 +615,7 @@ var box6 = document.createElement('div');
       img6.style.width = '100%';
       img6.style.borderRadius = '10px';
       img6.classList.add('img-hover');
-      
+
 var title6 = document.createElement('p');
        title6.innerText = "Georgette Sarees";
       title6.style.fontSize = "15px";
