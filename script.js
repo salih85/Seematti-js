@@ -615,6 +615,7 @@ var box6 = document.createElement('div');
       img6.style.width = '100%';
       img6.style.borderRadius = '10px';
       img6.classList.add('img-hover');
+      
 var title6 = document.createElement('p');
        title6.innerText = "Georgette Sarees";
       title6.style.fontSize = "15px";
@@ -634,6 +635,7 @@ var img7 = document.createElement('img');
       img7.style.width = '100%';
       img7.style.borderRadius = '10px';
       img7.classList.add('img-hover');
+
 var title7 = document.createElement('p');
      title7.innerText = "Kanchi Sarees";
      title7.style.fontSize = "15px";
@@ -653,6 +655,7 @@ var img8 = document.createElement('img');
       img8.style.width = '100%';
       img8.style.borderRadius = '10px';
        img8.classList.add('img-hover');
+
 var title8 = document.createElement('p');
      title8.innerText = "Tissue Sarees";
      title8.style.fontSize = "15px";
@@ -672,6 +675,7 @@ var img9 = document.createElement('img');
        img9.style.width = '100%';
        img9.style.borderRadius = '10px';
         img9.classList.add('img-hover');
+
 var title9 = document.createElement('p');
       title9.innerText = "Linen Sarees";
       title9.style.fontSize = "15px";
@@ -691,6 +695,7 @@ var img10 = document.createElement('img');
        img10.style.width = '100%';
        img10.style.borderRadius = '10px';
        img10.classList.add('img-hover');
+
 var title10 = document.createElement('p');
        title10.innerText = "Chiffon Sarees";
        title10.style.fontSize = "15px";
@@ -710,6 +715,7 @@ var img11 = document.createElement('img');
       img11.style.width = '100%';
       img11.style.borderRadius = '10px';
       img11.classList.add('img-hover');
+
 var title11 = document.createElement('p');
       title11.innerText = "Tussar Silk Sarees";
       title11.style.fontSize = "15px";
@@ -729,6 +735,7 @@ var img12 = document.createElement('img');
       img12.style.width = '100%';
       img12.style.borderRadius = '10px';
        img12.classList.add('img-hover');
+
 var title12 = document.createElement('p');
       title12.innerText = "Chanderi Sarees";
       title12.style.fontSize = "15px";
