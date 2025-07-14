@@ -156,7 +156,7 @@ var container1 = document.createElement('div');
 
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
-            box1.classList.add('col-6','col-md-2','col-lg-2');
+            box1.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img1 = document.createElement('img');
            img1.src = "./image/Web-banner_642-X-856_1.webp";
@@ -178,7 +178,7 @@ var title1 = document.createElement('p');
 
 var box2 = document.createElement('div');
           box2.style.textAlign = "center";
-          box2.classList.add('col-6','col-md-2','col-lg-2');
+          box2.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img2 = document.createElement('img');
           img2.src = "./image/Web-banner_642-X-856_2.webp";
@@ -199,7 +199,7 @@ container1.append(box2);
 
 var box3 = document.createElement('div');
          box3.style.textAlign = "center";
-         box3.classList.add('col-6','col-md-2','col-lg-2');
+         box3.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img3 = document.createElement('img');
          img3.src = "./image/Web-banner_642-X-856_3.webp";
@@ -221,7 +221,7 @@ container1.append(box3);
 
 var box4 = document.createElement('div');
          box4.style.textAlign = "center";
-         box4.classList.add('col-6','col-md-2','col-lg-2');
+         box4.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img4 = document.createElement('img');
          img4.src = "./image/Web-banner_642-X-856_4.webp";
@@ -243,7 +243,7 @@ container1.append(box4);
 
 var box5 = document.createElement('div');
          box5.style.textAlign = "center";
-         box5.classList.add('col-6','col-md-2','col-lg-2');
+         box5.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img5 = document.createElement('img');
         img5.src = "./image/Web-banner_642-X-856_5.webp";
@@ -265,7 +265,7 @@ container1.append(box5);
 
 var box6 = document.createElement('div');
        box6.style.textAlign = "center";
-       box6.classList.add('col-6','col-md-2','col-lg-2');
+       box6.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
 
 var img6 = document.createElement('img');
        img6.src = "./image/Web-banner_642-X-856_6.webp";
