@@ -153,7 +153,7 @@ var container1 = document.createElement('div');
            container1.style.paddingLeft = '90px';
            container1.style.paddingRight = '55px';
 
-           
+
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
             box1.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
@@ -1119,10 +1119,10 @@ var img2 = document.createElement('img');
      img2.style.borderRadius = "6px";
 
 var cat2 = document.createElement('p');
-     cat1.innerText = "Churider set";
-     cat1.style.color = 'gray';
-     cat1.style.fontSize = '14px';
-     cat1.style.marginBottom = '4px';   
+     cat2.innerText = "Churider set";
+     cat2.style.color = 'gray';
+     cat2.style.fontSize = '14px';
+     cat2.style.marginBottom = '4px';   
 
 var name2 = document.createElement('h6');
        name2.innerText = 'Blue Tussar Floral print Churidar...';
