@@ -153,7 +153,7 @@ var container1 = document.createElement('div');
            container1.style.paddingLeft = '90px';
            container1.style.paddingRight = '55px';
 
-
+           
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
             box1.classList.add('col-6','col-sm-4','col-md-2','col-lg-2');
