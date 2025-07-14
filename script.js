@@ -122,7 +122,7 @@ var toggleIcon = document.createElement('i');
              toggleIcon.classList.add('bi', 'bi-list', 'toggle-icon');
              toggleIcon.style.fontSize = "28px";
              toggleIcon.style.display = "none"; 
-       document.body.append(toggleIcon);
+             
        navbarright.append(toggleIcon);
 
        
@@ -133,25 +133,30 @@ var wrapper = document.createElement('div');
 
 var section = document.createElement('img');
                 section.setAttribute('src', './image/Web-banner_2075x675_3 (1).webp');
-                section.setAttribute('alt', 'banner image');
+                section.classList.add('section__image');
                 section.classList.add('img-fluid', 'w-100');
      wrapper.append(section);
      document.body.append(wrapper);
 
+var section1 = document.createElement('img');
+                section1.setAttribute('src',"./image/640x500_3.webp" );
+                section1.classList.add('img-fluid', 'w-100');
+                section1.classList.add('section1__image');
+                section1.style.display = "none"; 
+     wrapper.append(section1);
+
 
 
 var container1 = document.createElement('div');
-           container1.classList.add = ('row');
-           container1.style.display = "flex";
-           container1.style.flexWrap = "wrap";
-           container1.style.justifyContent = "center";
-           container1.style.gap = "15px";
-           container1.style.padding = "10px";
-           container1.style.border="transpernt";
+           container1.classList.add('row'); 
+           container1.classList.add('container-fluid', 'row', 'g-3',);
+           container1.style.paddingLeft = '90px';
+           container1.style.paddingRight = '55px';
+
 
 var box1 = document.createElement('div');
             box1.style.textAlign = "center";
-            box1.style.width = "160px";
+            box1.classList.add('col-6','col-md-2','col-lg-2');
 
 var img1 = document.createElement('img');
            img1.src = "./image/Web-banner_642-X-856_1.webp";
@@ -173,7 +178,7 @@ var title1 = document.createElement('p');
 
 var box2 = document.createElement('div');
           box2.style.textAlign = "center";
-          box2.style.width = "160px";
+          box2.classList.add('col-6','col-md-2','col-lg-2');
 
 var img2 = document.createElement('img');
           img2.src = "./image/Web-banner_642-X-856_2.webp";
@@ -194,7 +199,7 @@ container1.append(box2);
 
 var box3 = document.createElement('div');
          box3.style.textAlign = "center";
-         box3.style.width = "160px";
+         box3.classList.add('col-6','col-md-2','col-lg-2');
 
 var img3 = document.createElement('img');
          img3.src = "./image/Web-banner_642-X-856_3.webp";
@@ -216,7 +221,7 @@ container1.append(box3);
 
 var box4 = document.createElement('div');
          box4.style.textAlign = "center";
-         box4.style.width = "160px";
+         box4.classList.add('col-6','col-md-2','col-lg-2');
 
 var img4 = document.createElement('img');
          img4.src = "./image/Web-banner_642-X-856_4.webp";
@@ -238,7 +243,7 @@ container1.append(box4);
 
 var box5 = document.createElement('div');
          box5.style.textAlign = "center";
-         box5.style.width = "160px";
+         box5.classList.add('col-6','col-md-2','col-lg-2');
 
 var img5 = document.createElement('img');
         img5.src = "./image/Web-banner_642-X-856_5.webp";
@@ -260,7 +265,7 @@ container1.append(box5);
 
 var box6 = document.createElement('div');
        box6.style.textAlign = "center";
-       box6.style.width = "160px";
+       box6.classList.add('col-6','col-md-2','col-lg-2');
 
 var img6 = document.createElement('img');
        img6.src = "./image/Web-banner_642-X-856_6.webp";
@@ -285,7 +290,7 @@ document.body.append(container1);
 
 
 var container2 = document.createElement('div');
-         container2.classList.add('container', 'pt-5','pl-4');
+         container2.classList.add('container', 'pt-3','pl-4');
          container2.style.border="transpernt";
 
 var row = document.createElement('div');
@@ -322,6 +327,7 @@ var img1 = document.createElement('img');
       img1.style.width = '100%';
       img1.style.borderRadius = '10px';
       img1.classList.add('img-hover');
+       img1.style.marginTop="8px";
 box1.append(img1);
 imageRow.append(box1);
 
@@ -333,6 +339,7 @@ var img2 = document.createElement('img');
        img2.style.width = '100%';
        img2.style.borderRadius = '10px';
        img2.classList.add('img-hover');
+        img2.style.marginTop="8px";
 box2.append(img2);
 imageRow.append(box2);
 
@@ -343,7 +350,8 @@ var img3 = document.createElement('img');
        img3.style.width = '100%';
        img3.style.borderRadius = '10px';
        img3.classList.add('img-hover');
-       img3.style.marginTop="10px";
+       img3.style.marginTop="8px";
+
 box3.append(img3);
 imageRow.append(box3);
 
@@ -354,7 +362,7 @@ var img4 = document.createElement('img');
         img4.style.width = '100%';
         img4.style.borderRadius = '10px';
         img4.classList.add('img-hover');
-        img4.style.marginTop="10px";
+        img4.style.marginTop="8px";
 box4.append(img4);
 imageRow.append(box4);
 
@@ -400,7 +408,7 @@ var img1 = document.createElement('img',);
        img1.style.width = '100%';
        img1.style.borderRadius = '10px';
        img1.classList.add('img-hover');
-        img1.style.marginTop="8px";
+        img1.style.marginTop="12px";
 box1.append(img1);
 imageRow.append(box1);
 
@@ -412,7 +420,7 @@ var img2 = document.createElement('img');
          img2.style.width = '100%';
          img2.style.borderRadius = '10px';
          img2.classList.add('img-hover');
-         img2.style.marginTop="8px";
+         img2.style.marginTop="12px";
 box2.append(img2);
 imageRow.append(box2);
 
@@ -424,7 +432,7 @@ var img3 = document.createElement('img');
        img3.style.width = '100%';
        img3.style.borderRadius = '10px';
        img3.classList.add('img-hover');
-       img3.style.marginTop="8px";
+       img3.style.marginTop="12px";
 box3.append(img3);
 imageRow.append(box3);
 

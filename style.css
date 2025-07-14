@@ -23,7 +23,7 @@ body {
   }
 
 .img-hover:hover {
-       transform: translateY(-9px);
+       transform: translateY(-8px);
 }
 
 @media (max-width: 1024px) {
@@ -40,14 +40,17 @@ body {
         display: block !important;
     }
 
-    .flex-img {
-        display: flex;
-        flex-wrap: wrap;
-    }
+
 }
 
 @media (max-width: 768px) {
     .section-image {
         padding: 20px 50px 10px;
+    }
+    .section__image{
+        display: none;
+    }
+    .section1__image{
+        display: block !important;
     }
 }
